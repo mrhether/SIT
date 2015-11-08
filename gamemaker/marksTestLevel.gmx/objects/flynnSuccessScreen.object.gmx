@@ -98,8 +98,10 @@ if (isPaused == 1) {
     draw_sprite(flynnSuccess, -1, 71, 220);
 
     for (i = 1; i &lt;= 2 &amp;&amp; isPaused == 1; i++) {
-        if ( instance_find(self.menuObj[i], 0).overButton == 1 ||
-             instance_find(self.menuObjPressed[i], 0).overButton == 1 ) {       
+        var currentMenuObj = instance_find(self.menuObj[i], 0);
+        var currentMenuObjPressed = instance_find(self.menuObjPressed[i], 0)
+        if ((currentMenuObj != noone and currentMenuObj.overButton == 1) ||
+           (currentMenuObjPressed != noone and currentMenuObjPressed.overButton == 1) ) {       
             draw_set_color(c_red);
         }
         else {

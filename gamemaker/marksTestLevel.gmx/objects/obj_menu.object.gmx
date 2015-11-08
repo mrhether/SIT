@@ -186,8 +186,10 @@ firstButtonYPos = 7.5 * 32;
 verticalButtonSpace = 32 * 3;
 
 for (i = 1; i &lt;= 3; i++) {
-    if ( instance_find(self.menuObjects[i], 0).overButton == 1 ||
-         instance_find(self.menuObjectsPressed[i], 0).overButton == 1 ) {       
+    var currentMenuObject = instance_find(self.menuObjects[i], 0);
+    var currentMenuObjectPressed = instance_find(self.menuObjectsPressed[i], 0)
+    if ((currentMenuObject != noone and currentMenuObject.overButton == 1) ||
+        (currentMenuObjectPressed != noone and currentMenuObjectPressed.overButton == 1)) {       
         draw_set_color(c_red);
     }
     else {

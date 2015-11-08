@@ -59,7 +59,7 @@ words = ds_list_create()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>story = choose(0,1,2,3,4)
+            <string>story = choose(0,1,2,3,4,5,6)
 
 if (state == "NOTCHEF"){
      ds_list_add(words,"HEY!")
@@ -85,6 +85,15 @@ if (state == "NOTCHEF"){
         ds_list_add(words,"Dude")
         ds_list_add(words,"What?")
         ds_list_add(words,"I'm bored")
+        break
+     case 4:
+        ds_list_add(words,"Hey")
+        ds_list_add(words,"Hi?")
+        break
+     case 5:
+        ds_list_add(words,"Poker this friday?")
+        ds_list_add(words,"Ummm my wife kinda...")
+        ds_list_add(words,"Dude... grow a pair")
         break
      default: 
         ds_list_add(words,"The boss is mad")
@@ -229,7 +238,7 @@ if (stage &lt; ds_list_size(words)) {
     draw_roundrect(x-width/2,y-40-height,x+width/2,y-40,false)
     draw_triangle(x-5,y-40,x+5,y-40,x,y-30,false)
     draw_set_color(c_black)
-    draw_text(x,y-40-height,word)
+    draw_text(x,y-38-height,word)
 
 }
 </string>

@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>self.depth = -(y + self.sprite_height)
 shadowHeight = self.sprite_height
-
+show_debug_message("A FUCKING WALL");
 ds_grid_add(global.wallGrid, x/32, y/32, 1);
 
 wallShadow = instance_create(x , y + self.sprite_height , shadow)

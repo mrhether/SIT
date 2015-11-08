@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>type=0;
 
-self.depth = -(y + self.sprite_height-1)
+self.depth = -(y + self.sprite_height-2)
 </string>
           </argument>
         </arguments>

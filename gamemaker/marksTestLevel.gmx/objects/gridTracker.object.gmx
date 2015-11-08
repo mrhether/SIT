@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-11</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -38,6 +38,7 @@ for (i = 0; i &lt; w; i++){
         ds_grid_add(global.wallGrid,i,j,0);
     } 
 }
+show_debug_message("STARTING FOR FUCKS SAKE");
 </string>
           </argument>
         </arguments>

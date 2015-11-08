@@ -194,7 +194,7 @@ draw_rectangle(bar_x-size,bar_y-size,bar_x+size,bar_y+size,0);
 
 
 // If mouse hovers over left triangle
-if Mouse_enter(bar_min - 20, bar_y-size,bar_min-1,bar_y+size,0){
+if Mouse_enter(bar_min - 20, bar_y-size,bar_min-1,bar_y+size){
  if mouse_check_button_pressed(mb_left){ draw_set_color($000000);}
  else{ draw_set_color($bb0000);}
 }
@@ -202,7 +202,7 @@ else {draw_set_color($550000);}
 draw_rectangle(bar_min - 20, bar_y-size,bar_min-1,bar_y+size,0);
 
 // If mouse hovers over right triangle
-if Mouse_enter(bar_max + 1, bar_y-size,bar_max+20,bar_y+size,0){
+if Mouse_enter(bar_max + 1, bar_y-size,bar_max+20,bar_y+size){
  if mouse_check_button_pressed(mb_left){
    draw_set_color($000000);}
    else{ draw_set_color($bb0000);}
@@ -220,7 +220,6 @@ draw_triangle(bar_max + 4, bar_y-size+3, bar_max + 4, bar_y + size - 3, bar_max 
 
 draw_set_color(c_black);
 draw_rectangle(scroll_x - 1,scroll_y,scroll_x+surw,scroll_y+surh,1);
-
 
 
 

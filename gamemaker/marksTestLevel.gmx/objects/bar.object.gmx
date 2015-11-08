@@ -28,7 +28,6 @@
             <string>self.depth = -(y + self.sprite_height-1)
 shadowHeight = self.sprite_height-10;
 drawGlasses = false
-
 wallShadow = instance_create(x , y + self.sprite_height , shadow)
 wallShadow.type = 0
 
